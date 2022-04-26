@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        GMSServices.provideAPIKey(Constants.shared.key)
+        GMSPlacesClient.provideAPIKey(Constants.shared.key)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
@@ -24,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        let vc1 = SearchViewController()
+        let vc1 = ViewController()
         let vc2 = ContactsViewController()
         let vc3 = FavoritesViewController()
         

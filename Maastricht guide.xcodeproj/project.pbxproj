@@ -14,6 +14,11 @@
 		0BB388D328186B1400DDF549 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388D228186B1400DDF549 /* LocalState.swift */; };
 		0BB388D528186B2A00DDF549 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388D428186B2A00DDF549 /* OnboardingViewController.swift */; };
 		0BB388D728186B4000DDF549 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388D628186B4000DDF549 /* OnboardingContainerViewController.swift */; };
+		0BB388DB2818762200DDF549 /* CustomPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388DA2818762200DDF549 /* CustomPinView.swift */; };
+		0BB388DD2818763800DDF549 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388DC2818763800DDF549 /* PreviewView.swift */; };
+		0BB388DF2818764B00DDF549 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388DE2818764B00DDF549 /* DetailViewController.swift */; };
+		0BB388E1281877D300DDF549 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB388E0281877D300DDF549 /* Constants.swift */; };
+		41BCFB8F043BC3BE49F3A219 /* Pods_Maastricht_guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBF49D5B2E83FA4D48BC34A /* Pods_Maastricht_guide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,13 @@
 		0BB388D228186B1400DDF549 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		0BB388D428186B2A00DDF549 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		0BB388D628186B4000DDF549 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		0BB388DA2818762200DDF549 /* CustomPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinView.swift; sourceTree = "<group>"; };
+		0BB388DC2818763800DDF549 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		0BB388DE2818764B00DDF549 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0BB388E0281877D300DDF549 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6CB98F4494F1F3C8D47FFB57 /* Pods-Maastricht guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maastricht guide.debug.xcconfig"; path = "Target Support Files/Pods-Maastricht guide/Pods-Maastricht guide.debug.xcconfig"; sourceTree = "<group>"; };
+		94A4DDA4298B08DE73D663BF /* Pods-Maastricht guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maastricht guide.release.xcconfig"; path = "Target Support Files/Pods-Maastricht guide/Pods-Maastricht guide.release.xcconfig"; sourceTree = "<group>"; };
+		FEBF49D5B2E83FA4D48BC34A /* Pods_Maastricht_guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maastricht_guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BCFB8F043BC3BE49F3A219 /* Pods_Maastricht_guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				0BB388BD28186A4A00DDF549 /* Maastricht guide */,
 				0BB388BC28186A4A00DDF549 /* Products */,
+				D9BC4292244C880472FA4D4B /* Pods */,
+				717AA93C46B731D8FC716DFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +73,53 @@
 		0BB388BD28186A4A00DDF549 /* Maastricht guide */ = {
 			isa = PBXGroup;
 			children = (
+				0BB388D92818758400DDF549 /* Utils */,
+				0BB388D82818757B00DDF549 /* Onboarding */,
 				0BB388BE28186A4A00DDF549 /* AppDelegate.swift */,
 				0BB388C228186A4A00DDF549 /* ViewController.swift */,
 				0BB388C728186A4B00DDF549 /* Assets.xcassets */,
 				0BB388C928186A4B00DDF549 /* LaunchScreen.storyboard */,
 				0BB388CC28186A4B00DDF549 /* Info.plist */,
-				0BB388D228186B1400DDF549 /* LocalState.swift */,
+				0BB388DA2818762200DDF549 /* CustomPinView.swift */,
+				0BB388DC2818763800DDF549 /* PreviewView.swift */,
+				0BB388DE2818764B00DDF549 /* DetailViewController.swift */,
+				0BB388E0281877D300DDF549 /* Constants.swift */,
+			);
+			path = "Maastricht guide";
+			sourceTree = "<group>";
+		};
+		0BB388D82818757B00DDF549 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
 				0BB388D428186B2A00DDF549 /* OnboardingViewController.swift */,
 				0BB388D628186B4000DDF549 /* OnboardingContainerViewController.swift */,
 			);
-			path = "Maastricht guide";
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0BB388D92818758400DDF549 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0BB388D228186B1400DDF549 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		717AA93C46B731D8FC716DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEBF49D5B2E83FA4D48BC34A /* Pods_Maastricht_guide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BC4292244C880472FA4D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CB98F4494F1F3C8D47FFB57 /* Pods-Maastricht guide.debug.xcconfig */,
+				94A4DDA4298B08DE73D663BF /* Pods-Maastricht guide.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BB388CF28186A4B00DDF549 /* Build configuration list for PBXNativeTarget "Maastricht guide" */;
 			buildPhases = (
+				2211DBBDA084D2F45327A0E1 /* [CP] Check Pods Manifest.lock */,
 				0BB388B728186A4A00DDF549 /* Sources */,
 				0BB388B828186A4A00DDF549 /* Frameworks */,
 				0BB388B928186A4A00DDF549 /* Resources */,
+				B41C6EF32F76D4BB858285B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +189,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2211DBBDA084D2F45327A0E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maastricht guide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41C6EF32F76D4BB858285B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maastricht guide/Pods-Maastricht guide-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maastricht guide/Pods-Maastricht guide-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Maastricht guide/Pods-Maastricht guide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BB388B728186A4A00DDF549 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,9 +238,13 @@
 			files = (
 				0BB388C328186A4A00DDF549 /* ViewController.swift in Sources */,
 				0BB388D328186B1400DDF549 /* LocalState.swift in Sources */,
+				0BB388DD2818763800DDF549 /* PreviewView.swift in Sources */,
 				0BB388BF28186A4A00DDF549 /* AppDelegate.swift in Sources */,
+				0BB388DB2818762200DDF549 /* CustomPinView.swift in Sources */,
 				0BB388D728186B4000DDF549 /* OnboardingContainerViewController.swift in Sources */,
 				0BB388D528186B2A00DDF549 /* OnboardingViewController.swift in Sources */,
+				0BB388DF2818764B00DDF549 /* DetailViewController.swift in Sources */,
+				0BB388E1281877D300DDF549 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +380,7 @@
 		};
 		0BB388D028186A4B00DDF549 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB98F4494F1F3C8D47FFB57 /* Pods-Maastricht guide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +408,7 @@
 		};
 		0BB388D128186A4B00DDF549 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A4DDA4298B08DE73D663BF /* Pods-Maastricht guide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
